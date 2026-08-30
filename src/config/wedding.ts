@@ -12,14 +12,14 @@ export const wedding = {
     fullName: "Kashish Fazal",
     description:
       "A dreamer with a golden heart, Kashish lights up every room she enters with her warmth and grace.",
-    image: "/images/bride.jpg",
+    image: "/images/bride.png",
   },
   groom: {
     name: "Faraz",
     fullName: "Faraz Khan",
     description:
       "Kind, compassionate and full of life — Faraz's smile is his greatest charm.",
-    image: "/images/groom.jpg",
+    image: "/images/groom.png",
   },
 
   // ── Date & Time ──────────────────────────────────────────
@@ -42,6 +42,7 @@ export const wedding = {
     // closingBlessing: "بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا",
     closingBlessing: "بَارَكَ اللهُ لَكُماَ وَبَارَكَ عَلَيْكُماَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
     closingBlessingTranslation: "May Allah bless you both and shower His blessings upon you",
+    image:"/images/hero.png"
   },
 
   // ── Venue ────────────────────────────────────────────────

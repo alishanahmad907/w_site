@@ -103,7 +103,7 @@ export default function Hero() {
             <div className="absolute inset-2 border border-gold/15 rounded-sm" />
 
             <img
-              src={wedding.bride.image.replace("bride", "hero")}
+              src={wedding.invitation.image}
               alt={`${wedding.bride.name} & ${wedding.groom.name}`}
               className="w-full aspect-[3/4] object-cover rounded-sm"
               loading="eager"
