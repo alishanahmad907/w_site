@@ -1,4 +1,4 @@
-# Kashish & Arjun — Wedding Invitation 💍
+# Kashish & Faraz — Wedding Invitation 💍
 
 A premium, single-page digital wedding invitation website built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
