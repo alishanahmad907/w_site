@@ -133,7 +133,7 @@ export const wedding = {
     title: "Kashish & Faraz — Wedding Invitation",
     description:
       "You are cordially invited to celebrate the wedding of Kashish & Faraz on 15 November 2026.",
-    ogImage: "/images/og-image.jpg",
+    ogImage: "/images/venue-2.png",
   },
 };
 
