@@ -7,7 +7,7 @@ const navItems = [
   { label: "Events", href: "#events" },
   { label: "Couple", href: "#couple" },
   { label: "Venue", href: "#venue" },
-  { label: "Gallery", href: "#gallery" },
+  // { label: "Gallery", href: "#gallery" },
 ];
 
 interface NavigationProps {
