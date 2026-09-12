@@ -33,7 +33,7 @@ function FloatingPetal({ delay, left }: { delay: number; left: string }) {
           rx="6"
           ry="8"
           fill="var(--color-cream)"
-          opacity="0.2"
+          // opacity="0.2"
         />
       </svg>
     </motion.div>
