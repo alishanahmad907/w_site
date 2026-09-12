@@ -12,10 +12,11 @@ export default function Countdown() {
     <section className="relative py-16 sm:py-24 px-4 bg-cream bg-pattern-subtle overflow-hidden">
       {/* Soft gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-ivory via-transparent to-ivory pointer-events-none" />
+      <div className="absolute inset-0 bg-paper-texture pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         <motion.p
-          className="text-charcoal-light text-xs sm:text-sm tracking-[0.25em] uppercase mb-6 sm:mb-8"
+          className="text-taupe-light text-xs sm:text-sm tracking-[0.25em] uppercase mb-6 sm:mb-8"
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,12 +57,12 @@ export default function Countdown() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
               >
-                <div className="relative bg-ivory/80 border border-gold/25 py-4 sm:py-5 md:py-6 px-2 backdrop-blur-sm">
+                <div className="relative bg-ivory/80 border border-burgundy/15 py-4 sm:py-5 md:py-6 px-2 backdrop-blur-sm">
                   {/* Corner accents */}
-                  <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-gold/40" />
-                  <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-gold/40" />
-                  <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-gold/40" />
-                  <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-gold/40" />
+                  <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-gold/30" />
+                  <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-gold/30" />
+                  <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-gold/30" />
+                  <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-gold/30" />
 
                   <motion.span
                     className="block font-display text-3xl sm:text-4xl md:text-5xl text-burgundy leading-none"
@@ -72,7 +73,7 @@ export default function Countdown() {
                   >
                     {String(countdown[unit]).padStart(2, "0")}
                   </motion.span>
-                  <span className="block mt-2 text-[10px] sm:text-xs text-charcoal-light tracking-[0.2em] uppercase">
+                  <span className="block mt-2 text-[10px] sm:text-xs text-taupe-light tracking-[0.2em] uppercase">
                     {unit}
                   </span>
                 </div>
@@ -82,7 +83,7 @@ export default function Countdown() {
         )}
 
         <motion.p
-          className="mt-8 sm:mt-10 font-heading text-base sm:text-lg text-charcoal tracking-wider"
+          className="mt-8 sm:mt-10 font-heading text-base sm:text-lg text-taupe tracking-wider"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

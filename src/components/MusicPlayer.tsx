@@ -69,7 +69,11 @@ export default function MusicPlayer({ shouldPlay }: MusicPlayerProps) {
       {shouldPlay && (
         <motion.button
           onClick={toggleMute}
-          className="fixed bottom-5 right-5 z-50 w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold/30 bg-ivory/90 backdrop-blur-sm flex items-center justify-center shadow-lg hover:border-gold/60 transition-colors duration-300 group cursor-pointer"
+          className="fixed bottom-5 right-5 z-50 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-lg transition-colors duration-300 group cursor-pointer"
+          style={{
+            backgroundColor: "var(--color-burgundy)",
+            border: "1px solid rgba(255, 248, 240, 0.2)",
+          }}
           initial={{ opacity: 0, scale: 0, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0 }}
@@ -79,21 +83,21 @@ export default function MusicPlayer({ shouldPlay }: MusicPlayerProps) {
           aria-label={isMuted ? "Unmute music" : "Mute music"}
         >
           {isMuted ? (
-            <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 text-charcoal-light" />
+            <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 text-cream/60" />
           ) : (
-            <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-gold" />
+            <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-cream" />
           )}
 
           {/* Animated rings when playing */}
           {isPlaying && !isMuted && (
             <>
               <motion.span
-                className="absolute inset-0 rounded-full border border-gold/20"
+                className="absolute inset-0 rounded-full border border-cream/15"
                 animate={{ scale: [1, 1.5], opacity: [0.4, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeOut" }}
               />
               <motion.span
-                className="absolute inset-0 rounded-full border border-gold/15"
+                className="absolute inset-0 rounded-full border border-cream/10"
                 animate={{ scale: [1, 1.8], opacity: [0.3, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeOut", delay: 0.5 }}
               />

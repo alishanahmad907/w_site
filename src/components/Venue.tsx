@@ -7,10 +7,19 @@ export default function Venue() {
   return (
     <section
       id="venue"
-      className="relative py-16 sm:py-24 px-4 bg-ivory bg-texture overflow-hidden"
+      className="relative py-16 sm:py-24 px-4 overflow-hidden"
+      style={{ backgroundColor: "var(--color-burgundy)" }}
     >
+      {/* Subtle texture overlay */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,255,255,0.05) 0%, transparent 50%),
+                           radial-gradient(circle at 75% 75%, rgba(255,255,255,0.03) 0%, transparent 50%)`,
+        }} />
+      </div>
+
       <div className="relative z-10 max-w-3xl mx-auto">
-        {/* Header */}
+        {/* Header — ivory text on burgundy */}
         <motion.div
           className="text-center mb-12 sm:mb-14"
           initial={{ opacity: 0, y: 20 }}
@@ -18,13 +27,13 @@ export default function Venue() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-charcoal-light text-xs sm:text-sm tracking-[0.25em] uppercase mb-3">
+          <p className="text-cream/60 text-xs sm:text-sm tracking-[0.25em] uppercase mb-3">
             The Celebration Awaits At
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-burgundy">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-cream">
             Venue
           </h2>
-          <DecorativeDivider variant="ornate" />
+          <DecorativeDivider variant="ornate" theme="ivory" />
         </motion.div>
 
         {/* Venue card */}
@@ -49,35 +58,35 @@ export default function Venue() {
             </div>
           </div>
 
-          {/* Venue details */}
+          {/* Venue details — ivory on burgundy */}
           <div className="text-center space-y-3">
-            <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-burgundy">
+            <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-cream">
               {wedding.venue.name}
             </h3>
 
-            <div className="flex items-center justify-center gap-2 text-charcoal-light">
-              <MapPin className="w-4 h-4 text-gold/70 flex-shrink-0" />
+            <div className="flex items-center justify-center gap-2 text-cream/70">
+              <MapPin className="w-4 h-4 text-gold/60 flex-shrink-0" />
               <p className="text-sm sm:text-base">{wedding.venue.address}</p>
             </div>
 
-            <p className="text-charcoal-light text-sm sm:text-base">
+            <p className="text-cream/60 text-sm sm:text-base">
               {wedding.venue.city}
             </p>
 
-            <DecorativeDivider variant="simple" />
+            <DecorativeDivider variant="simple" theme="ivory" />
 
-            {/* Maps button */}
+            {/* Maps button — ivory on burgundy */}
             <motion.a
               href={wedding.venue.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 font-heading text-xs sm:text-sm tracking-[0.15em] uppercase text-burgundy border border-gold/40 hover:border-gold hover:bg-gold/5 transition-all duration-500 group"
+              className="inline-flex items-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 font-heading text-xs sm:text-sm tracking-[0.15em] uppercase text-cream border border-cream/30 hover:border-cream/60 hover:bg-cream/5 transition-all duration-500 group"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
-              <MapPin className="w-4 h-4 text-gold transition-transform duration-300 group-hover:scale-110" />
+              <MapPin className="w-4 h-4 text-gold/70 transition-transform duration-300 group-hover:scale-110" />
               <span>View on Google Maps</span>
-              <ExternalLink className="w-3 h-3 text-gold/60" />
+              <ExternalLink className="w-3 h-3 text-cream/40" />
             </motion.a>
           </div>
         </motion.div>

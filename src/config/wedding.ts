@@ -16,44 +16,80 @@ export const wedding = {
   },
   groom: {
     name: "Faraz",
-    fullName: "Faraz Khan",
+    fullName: "Faraz Ahmar Khan",
     description:
       "Kind, compassionate and full of life — Faraz's smile is his greatest charm.",
     image: "/images/groom.png",
   },
 
   // ── Date & Time ──────────────────────────────────────────
-  date: "2026-11-15T18:30:00",
+  date: "2026-11-15T19:30:00",
   displayDate: "15 November 2026",
   displayDay: "Sunday",
+  displayTime: "7:30 PM",
 
   // ── Invitation Text ──────────────────────────────────────
   invitation: {
-    // openingBlessing: "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
     openingBlessing: "﷽",
     openingBlessingTranslation: "In the name of God, the Most Gracious, the Most Merciful",
-    openingText: "With the blessings of our families",
+    openingText: "Together with their families,",
+    familyInviteText: "invite you to celebrate the Wedding Ceremony of their Daughter",
+    groomIntro: "S/O",
     coupleIntro: "request the pleasure of your company",
     heroSubtitle: "Together with their families",
     heroInvite: "invite you to celebrate their union",
     message:
       "Two hearts, two families, one beautiful beginning.\n\nWe would be honoured to have you with us as we begin this beautiful journey together.",
     closingMessage: "Your presence is the greatest gift.",
-    // closingBlessing: "بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا",
+    closingPhrase: "Kindly grace the gathering with your delightful presence",
+    closingPhrase2: "We would be honoured to share this special day with you.",
     closingBlessing: "بَارَكَ اللهُ لَكُماَ وَبَارَكَ عَلَيْكُماَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
     closingBlessingTranslation: "May Allah bless you both and shower His blessings upon you",
     image:"/images/hero.png"
   },
 
+  // ── Family Letter ────────────────────────────────────────
+  familyLetter: {
+    title: "An Ode to My Family",
+    body: `It's more than a big moment,
+it's a promise of lifetime but before this promise
+it was you (all).
+And somewhere in a very safe space of my heart
+you will always be there.
+I opened my eyes in your arms as you held me,
+and ever since then I've been there.
+Ever since then you never left me to my own.
+Today, as I walk into this journey of forever
+I will carry what you have given me.
+The warmth, the love, the care, and the ethos to live by.
+No matter where life takes us I will always
+remember where my roots are.
+With you.
+No combination of words could ever express
+the love and gratitude in my heart.
+Putting all my sweat and blood, head to toe
+I would still never be able to give back what you
+have given to me.
+But -
+I would choose you to be my family in every
+universe.
+
+For every beginning, every quiet sacrifice, and
+all the unconditional love -
+This is my ode to you.
+My family. My home. My heart.`,
+    signature: "Yours,\nKashish Fazal",
+  },
+
   // ── Venue ────────────────────────────────────────────────
   venue: {
-    name: "The Grand Imperial Palace",
-    address: "42, Maharaja Road, Civil Lines",
-    city: "Jaipur, Rajasthan",
+    name: "The Wedding House",
+    address: "Ring Road",
+    city: "Varanasi",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=The+Grand+Imperial+Palace+Jaipur",
+      "https://maps.app.goo.gl/usYGDveF66LMxUwb9",
     // image: "/images/venue.jpg",
-    image: "/images/venue-2.png",
+    image: "/images/venue-1.jpg",
   },
 
   // ── Music ────────────────────────────────────────────────
@@ -87,7 +123,7 @@ export const wedding = {
     {
       name: "Wedding",
       date: "15 November 2026",
-      time: "6:30 PM",
+      time: "7:30 PM",
       venue: "The Grand Imperial Palace — Main Lawns",
       description:
         "The auspicious ceremony where two souls become one.",
@@ -120,12 +156,18 @@ export const wedding = {
   family: {
     bride: {
       father: "Mr. Sayeed Ahmad",
-      mother: "Mrs. Dilruba Ahmad",
+      mother: "Mrs. Dilruba Khan",
     },
     groom: {
-      father: "Mr. Papu",
-      mother: "Mrs. Papu",
+      father: "Mr. Mushtaq Ullah Khan",
+      mother: "Mrs. Yasmeen Begum",
     },
+  },
+
+  // ── RSVP ─────────────────────────────────────────────────
+  rsvp: {
+    contactName: "Sayeed Ahmad",
+    contactPhone: "+91 8953292366",
   },
 
   // ── SEO / Sharing ────────────────────────────────────────
@@ -133,7 +175,7 @@ export const wedding = {
     title: "Kashish & Faraz — Wedding Invitation",
     description:
       "You are cordially invited to celebrate the wedding of Kashish & Faraz on 15 November 2026.",
-    ogImage: "/images/venue-2.png",
+    ogImage: "https://lh3.googleusercontent.com/gpms-cs-s/AFP8RcP02jl2nnCfvyNQNqEaXlJSs1HvSlLaqD9XIs72Tm2RHOWezOZJCkSgGY5zEdZTsBoV08ausD8KGgvj3n9oSFu1GRO_TqqkmpLfBVGYXGWbq_n9tSq3XY_vkPj_Yr3tzcviJ1ySVa_qXUpL=s2048-v1",
   },
 };
 
