@@ -101,30 +101,30 @@ My family. My home. My heart.`,
   // ── Events ───────────────────────────────────────────────
   events: [
     {
-      name: "Mehendi",
-      date: "13 November 2026",
-      time: "4:00 PM onwards",
-      venue: "The Grand Imperial Palace — Garden Lawn",
-      description:
-        "An evening of colour, laughter, and beautiful mehendi artistry.",
-      icon: "palette" as const,
-      dressCode: "Festive Indian — Greens & Yellows",
-    },
-    {
       name: "Haldi",
       date: "13 November 2026",
       time: "10:00 AM",
-      venue: "The Grand Imperial Palace — Courtyard",
+      venue: "Our Home, Varanasi",
       description:
         "A morning filled with turmeric, blessings, and joyous celebration.",
       icon: "sun" as const,
       dressCode: "Traditional Yellow",
     },
     {
+      name: "Mehendi",
+      date: "13 November 2026",
+      time: "4:00 PM onwards",
+      venue: "Our Home, Varanasi",
+      description:
+        "An evening of colour, laughter, and beautiful mehendi artistry.",
+      icon: "palette" as const,
+      dressCode: "Festive Indian — Greens & Yellows",
+    },
+    {
       name: "Wedding",
       date: "15 November 2026",
       time: "7:30 PM",
-      venue: "The Grand Imperial Palace — Main Lawns",
+      venue: "The Wedding House, Ring Road",
       description:
         "The auspicious ceremony where two souls become one.",
       icon: "heart" as const,

@@ -136,10 +136,10 @@ export default function Closing() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.7 }}
           >
-            <p className="font-arabic text-cream/40 text-sm sm:text-base mb-1">
+            <p className="font-arabic text-cream text-sm sm:text-base mb-1">
               {wedding.invitation.closingBlessing}
             </p>
-            <p className="text-cream/25 text-[10px] sm:text-xs italic tracking-wide">
+            <p className="text-cream/60 text-[10px] sm:text-xs italic tracking-wide">
               {wedding.invitation.closingBlessingTranslation}
             </p>
           </motion.div>
@@ -158,7 +158,7 @@ export default function Closing() {
 
         {/* Made with love */}
         <motion.p
-          className="mt-8 text-cream/15 text-[10px] tracking-[0.3em] uppercase"
+          className="mt-8 text-cream/60 text-[10px] tracking-[0.3em] uppercase"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -167,7 +167,7 @@ export default function Closing() {
           Made with love by
         </motion.p>
         <motion.p
-          className="text-cream/15 text-[10px] tracking-[0.3em] uppercase"
+          className="text-cream/50 text-[10px] tracking-[0.3em] uppercase"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
