@@ -103,7 +103,7 @@ My family. My home. My heart.`,
     {
       name: "Haldi",
       date: "13 November 2026",
-      time: "10:00 AM",
+      time: "2:00 PM",
       venue: "Our Home, Varanasi",
       description:
         "A morning filled with turmeric, blessings, and joyous celebration.",
@@ -113,7 +113,7 @@ My family. My home. My heart.`,
     {
       name: "Mehendi",
       date: "13 November 2026",
-      time: "4:00 PM onwards",
+      time: "6:00 PM onwards",
       venue: "Our Home, Varanasi",
       description:
         "An evening of colour, laughter, and beautiful mehendi artistry.",
