@@ -12,11 +12,14 @@
   --color-blush-light: #F2D7D7;
   --color-rose: #D4A0A0;
   --color-dusty-rose: #C9929B;
-  --color-gold: #C9A96E;
-  --color-gold-dark: #B8860B;
-  --color-gold-light: #D4BC7C;
-  --color-burgundy: #7D3C4A;
-  --color-burgundy-light: #9B5A68;
+  --color-gold: #B8976A;
+  --color-gold-dark: #9C7E55;
+  --color-gold-light: #CCAB7C;
+  --color-burgundy: #8B2635;
+  --color-burgundy-light: #A4344A;
+  --color-burgundy-dark: #6B1D2A;
+  --color-taupe: #765D4C;
+  --color-taupe-light: #927A68;
   --color-charcoal: #3D2C2E;
   --color-charcoal-light: #5A4548;
 
@@ -25,6 +28,7 @@
   --font-heading: "Playfair Display", "Georgia", serif;
   --font-body: "Lora", "Georgia", serif;
   --font-arabic: "Amiri", "Traditional Arabic", serif;
+  --font-script: "Pinyon Script", cursive;
 
   /* ── Animations ─────────────────────────────────────────── */
   --animate-float: float 6s ease-in-out infinite;
@@ -47,7 +51,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--color-charcoal);
+  color: var(--color-taupe);
   background-color: var(--color-ivory);
   overflow-x: hidden;
 }
@@ -60,11 +64,11 @@ body {
   background: var(--color-cream);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-blush);
+  background: var(--color-burgundy);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-rose);
+  background: var(--color-burgundy-light);
 }
 
 /* ── Selection ────────────────────────────────────────────── */
@@ -87,18 +91,27 @@ body {
   direction: rtl;
   unicode-bidi: isolate;
 }
+.font-script {
+  font-family: var(--font-script);
+}
 
 /* ============================================================
    TEXTURE & PATTERN BACKGROUNDS
    ============================================================ */
 .bg-texture {
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(201, 169, 110, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 25% 25%, rgba(184, 151, 106, 0.03) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(232, 196, 196, 0.05) 0%, transparent 50%);
 }
 
 .bg-pattern-subtle {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A96E' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B8976A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Paper texture for ivory sections — very subtle noise */
+.bg-paper-texture {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.015'/%3E%3C/svg%3E");
 }
 
 /* ============================================================
@@ -152,7 +165,7 @@ body {
    ============================================================ */
 .ornamental-border {
   border: 1px solid var(--color-gold-light);
-  box-shadow: inset 0 0 0 3px var(--color-ivory), inset 0 0 0 4px rgba(201, 169, 110, 0.2);
+  box-shadow: inset 0 0 0 3px var(--color-ivory), inset 0 0 0 4px rgba(184, 151, 106, 0.2);
 }
 
 .gold-text {

@@ -10,6 +10,16 @@ import Family from "./components/Family";
 import Closing from "./components/Closing";
 import MusicPlayer from "./components/MusicPlayer";
 import Navigation from "./components/Navigation";
+import DecorativeDivider from "./components/DecorativeDivider";
+
+/* ── Section Transition — burgundy ornament between ivory sections */
+function SectionTransition({ variant = "simple" }: { variant?: "simple" | "floral" | "vine" }) {
+  return (
+    <div className="bg-ivory py-2 sm:py-4">
+      <DecorativeDivider variant={variant} color="var(--color-burgundy)" />
+    </div>
+  );
+}
 
 export default function App() {
   const [isInvitationOpen, setIsInvitationOpen] = useState(false);
@@ -34,18 +44,23 @@ export default function App() {
       {isInvitationOpen && (
         <main className="overflow-hidden">
           <Hero />
+          <SectionTransition variant="vine" />
           <Countdown />
+          <SectionTransition variant="simple" />
           <Events />
+          <SectionTransition variant="floral" />
           <Couple />
+          {/* Venue has burgundy bg — no ivory transition needed */}
           <Venue />
           {/* <Gallery /> */}
           <Family />
+          {/* Closing has burgundy bg */}
           <Closing />
         </main>
       )}
 
       {/* Floating UI */}
-      <MusicPlayer shouldPlay={isInvitationOpen} />
+      {/* <MusicPlayer shouldPlay={isInvitationOpen} /> */}
       <Navigation isVisible={isInvitationOpen} />
     </>
   );

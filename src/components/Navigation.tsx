@@ -29,10 +29,14 @@ export default function Navigation({ isVisible }: NavigationProps) {
 
   return (
     <>
-      {/* Menu toggle button */}
+      {/* Menu toggle button — burgundy with ivory icon */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 sm:top-5 sm:right-5 z-[60] w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-gold/30 bg-ivory/90 backdrop-blur-sm flex items-center justify-center shadow-md hover:border-gold/60 transition-colors duration-300 cursor-pointer"
+        className="fixed top-4 right-4 sm:top-5 sm:right-5 z-[60] w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center shadow-md transition-colors duration-300 cursor-pointer"
+        style={{
+          backgroundColor: "var(--color-burgundy)",
+          border: "1px solid rgba(255, 248, 240, 0.2)",
+        }}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, type: "spring", stiffness: 300, damping: 25 }}
@@ -41,9 +45,9 @@ export default function Navigation({ isVisible }: NavigationProps) {
         aria-label="Toggle navigation"
       >
         {isOpen ? (
-          <X className="w-4 h-4 text-charcoal" />
+          <X className="w-4 h-4 text-cream" />
         ) : (
-          <Menu className="w-4 h-4 text-charcoal" />
+          <Menu className="w-4 h-4 text-cream" />
         )}
       </motion.button>
 
@@ -69,7 +73,7 @@ export default function Navigation({ isVisible }: NavigationProps) {
                   >
                     <button
                       onClick={() => handleNavClick(item.href)}
-                      className="font-display text-2xl sm:text-3xl text-charcoal hover:text-burgundy tracking-wider transition-colors duration-300 cursor-pointer"
+                      className="font-display text-2xl sm:text-3xl text-taupe hover:text-burgundy tracking-wider transition-colors duration-300 cursor-pointer"
                     >
                       {item.label}
                     </button>
@@ -79,11 +83,17 @@ export default function Navigation({ isVisible }: NavigationProps) {
 
               {/* Decorative line */}
               <motion.div
-                className="mt-10 w-16 h-px bg-gold/30 mx-auto"
+                className="mt-8 w-16 h-px bg-burgundy/20 mx-auto"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               />
+              {/* <p className="mt-10 text-[10px] tracking-[0.3em] uppercase">
+                Made by
+              </p>
+              <p className="mt-2 text-[10px] tracking-[0.3em] uppercase">
+                alishanahmad907@gmail.com
+              </p> */}
             </nav>
           </motion.div>
         )}
