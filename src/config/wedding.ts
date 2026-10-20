@@ -100,26 +100,26 @@ My family. My home. My heart.`,
 
   // ── Events ───────────────────────────────────────────────
   events: [
-    {
-      name: "Haldi",
-      date: "13 November 2026",
-      time: "2:00 PM",
-      venue: "Our Home, Varanasi",
-      description:
-        "A morning filled with turmeric, blessings, and joyous celebration.",
-      icon: "sun" as const,
-      dressCode: "Traditional Yellow",
-    },
-    {
-      name: "Mehendi",
-      date: "13 November 2026",
-      time: "6:00 PM onwards",
-      venue: "Our Home, Varanasi",
-      description:
-        "An evening of colour, laughter, and beautiful mehendi artistry.",
-      icon: "palette" as const,
-      dressCode: "Festive Indian — Greens & Yellows",
-    },
+    // {
+    //   name: "Haldi",
+    //   date: "13 November 2026",
+    //   time: "2:00 PM",
+    //   venue: "Our Home, Varanasi",
+    //   description:
+    //     "A morning filled with turmeric, blessings, and joyous celebration.",
+    //   icon: "sun" as const,
+    //   dressCode: "Traditional Yellow",
+    // },
+    // {
+    //   name: "Mehendi",
+    //   date: "13 November 2026",
+    //   time: "6:00 PM onwards",
+    //   venue: "Our Home, Varanasi",
+    //   description:
+    //     "An evening of colour, laughter, and beautiful mehendi artistry.",
+    //   icon: "palette" as const,
+    //   dressCode: "Festive Indian — Greens & Yellows",
+    // },
     {
       name: "Wedding",
       date: "15 November 2026",
